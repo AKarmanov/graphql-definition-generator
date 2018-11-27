@@ -6,3 +6,4 @@
 *.ipr
 target
 node_modules
+node
