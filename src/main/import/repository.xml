@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <graphql-definition-generator j:dependencies="default"
+                                    j:modulePriority="0"
+                                    j:moduleType="module"
+                                    j:title="graphql-definition-generator"
+                                    jcr:primaryType="jnt:module">
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder" />
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder">
+                        <definitions jcr:primaryType="gdg:definitions" />
+                    </contents>
+                    <server-settings-base j:view="gdg-serverSettings"
+                                          jcr:mixinTypes="jmix:useUILocale"
+                                          jcr:primaryType="jnt:template">
+                        <configurations j:hiddenTemplate="false"
+                                        j:icon="/modules/serverSettings/templates/files/serveradmin/configurations/configurations.png"
+                                        j:titleKey="serverSettings.configurations"
+                                        jcr:mixinTypes="jmix:rbTitle"
+                                        jcr:primaryType="jnt:template">
+                            <graphql-definition-generator j:applyOn="jnt:globalSettings"
+                                                j:defaultTemplate="false"
+                                                j:hiddenTemplate="false"
+                                                jcr:primaryType="jnt:contentTemplate"
+                                                j:view="serverSettings">
+                                <pagecontent jcr:primaryType="jnt:contentList">
+                                    <graphqlDefinitionGenerator
+                                            j:view="graphql"
+                                            jcr:mixinTypes="jmix:renderable"
+                                            jcr:primaryType="gdg:serverSettings"/>
+                                </pagecontent>
+                            </graphql-definition-generator>
+                        </configurations>
+                    </server-settings-base>
+                </templates>
+                
+            </graphql-definition-generator>
+    </modules>
+</content>

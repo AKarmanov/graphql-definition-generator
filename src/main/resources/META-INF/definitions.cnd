@@ -1,0 +1,8 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<gdg = 'http://www.jahia.org/jahia/gdg/1.0'>
+
+[gdg:serverSettings] > jnt:content, jmix:studioOnly, mix:title, jmix:siteComponent
+
+[gdg:definitions] > jnt:content, jmix:droppableContent, jmix:hiddenType
+- definitions (string) = '[]' autocreated
