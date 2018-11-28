@@ -52,12 +52,12 @@ class GDG extends React.Component {
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
-                    <Paper className={classes.paper}>
+                    <Paper className={classes.paper} style={{maxHeight: "350px", minHeight: "350px", overflowY:"scroll"}}>
                         <DefinitionsList />
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
-                    <Paper className={classes.paper}>
+                    <Paper className={classes.paper} style={{maxHeight: "350px", minHeight: "350px", overflowY:"scroll"}}>
                         <EditDefinition />
                     </Paper>
                 </Grid>

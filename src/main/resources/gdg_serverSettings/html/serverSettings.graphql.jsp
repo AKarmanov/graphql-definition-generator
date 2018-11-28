@@ -16,7 +16,7 @@
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 <%--@elvariable id="workspace" type="java.lang.String"--%>
 
-<template:addResources type="javascript" resources="apps/security-filter-jwt.js" />
+<template:addResources type="javascript" resources="apps/gdg.js" />
 
 <div id="gdgApp" ></div>
 

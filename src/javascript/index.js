@@ -1,1 +1,1 @@
-import JWTApp from './jwt/main';
+import JWTApp from './gdg/main';

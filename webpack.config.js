@@ -5,7 +5,7 @@ module.exports = {
     entry: path.resolve(__dirname, 'src/javascript', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'src/main/resources/javascript/apps/'),
-        filename: 'security-filter-jwt.js'
+        filename: 'gdg.js'
     },
     resolve: {
         mainFields: ['module', 'main'],
